@@ -3,76 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contaminación del aire</title>
+    <title>EcoAire | Contaminación del aire</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">App educativa</p>
-        <h1>Contaminación del aire y su impacto en la capa de ozono</h1>
-        <p>
-          La contaminación del aire no solo afecta la salud humana; también daña el planeta y pone en riesgo la capa de ozono que nos protege.
-        </p>
-        <button id="btn-impacto">Ver impacto inmediato</button>
+    <header class="topbar">
+      <div class="container">
+        <a href="#" class="brand">EcoAire</a>
+        <nav>
+          <a href="#impacto">Impacto</a>
+          <a href="#prevencion">Prevención</a>
+          <a href="#quiz">Quiz</a>
+        </nav>
       </div>
     </header>
 
-    <main>
-      <section class="facts">
-        <article>
-          <h2>¿Qué es la contaminación del aire?</h2>
-          <p>
-            Es la presencia de sustancias dañinas en la atmósfera, como humo, partículas, gases tóxicos y emisiones industriales.
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Educación ambiental</p>
+          <h1>Protege el aire y la capa de ozono con acciones reales</h1>
+          <p class="hero-tagline">
+            Interfaz renovada con diseño claro, secciones ordenadas y experiencia responsive.
           </p>
+          <p>
+            Descubre cómo <span class="highlight">la contaminación del aire</span> impacta tu salud, el clima y el equilibrio de la atmósfera.
+          </p>
+          <div class="hero-actions">
+            <button class="button-primary" id="btn-impacto">Ver impacto inmediato</button>
+            <a href="#quiz" class="button-secondary">Ir al quiz</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <h2>Información clara</h2>
+            <p>Explica el daño al aire y cómo la capa de ozono protege a todos los seres vivos.</p>
+          </div>
+          <div class="hero-card">
+            <h2>Diseño profesional</h2>
+            <p>Una presentación moderna y accesible para tu proyecto o presentación escolar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="card-panel" id="impacto">
+        <h2>Impacto principal</h2>
+        <div class="impact-box">
+          <strong>Consejo:</strong> Haz clic en el botón para conocer un efecto importante.
+        </div>
+      </section>
+
+      <section class="card-grid">
+        <article class="feature-card">
+          <h3>Contaminación del aire</h3>
+          <p>Es la presencia de sustancias nocivas en la atmósfera, como gases, partículas y emisiones industriales.</p>
         </article>
-        <article>
-          <h2>¿Qué pasa con la capa de ozono?</h2>
-          <p>
-            La capa de ozono filtra los rayos ultravioletas peligrosos. Cuando se dañan los compuestos protectores, aumenta el riesgo de cáncer de piel y problemas ambientales.
-          </p>
+        <article class="feature-card">
+          <h3>Capa de ozono</h3>
+          <p>Filtra los rayos ultravioletas peligrosos. Cuando se daña, aumenta el riesgo de cáncer de piel y daños ambientales.</p>
         </article>
       </section>
 
-      <section class="panel">
-        <h2>Cómo afecta al planeta</h2>
-        <div id="impacto" class="impact-box">
-          Haz clic en el botón para conocer un efecto importante.
-        </div>
-        <div class="cards">
-          <div class="card">
-            <h3>Salud</h3>
-            <p>Provoca problemas respiratorios y enfermedades cardiovasculares.</p>
-          </div>
-          <div class="card">
-            <h3>Clima</h3>
-            <p>Aumenta el calentamiento global y altera los patrones del tiempo.</p>
-          </div>
-          <div class="card">
-            <h3>Ozono</h3>
-            <p>Debilita la protección natural contra la radiación solar.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="tips">
+      <section class="card-panel" id="prevencion">
         <h2>Cómo prevenir la contaminación</h2>
         <ul>
           <li>Usar transporte público, bicicleta o caminar.</li>
           <li>Reducir el consumo de energía y apagar luces innecesarias.</li>
-          <li>Reciclar y evitar el uso excesivo de plásticos.</li>
-          <li>Plantando árboles y cuidando los espacios verdes.</li>
-          <li>Apoyar tecnologías limpias y energías renovables.</li>
+          <li>Reciclar y evitar plásticos desechables.</li>
+          <li>Plantar árboles y cuidar espacios verdes.</li>
+          <li>Apoyar energías limpias y tecnologías sostenibles.</li>
         </ul>
       </section>
 
-      <section class="quiz">
+      <section class="card-grid-3">
+        <article class="feature-card">
+          <h3>Salud</h3>
+          <p>La contaminación puede causar problemas respiratorios, alergias y enfermedades cardiovasculares.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Clima</h3>
+          <p>Las emisiones intensifican el calentamiento global y alteran los patrones del clima.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Ozono</h3>
+          <p>Un ozono dañado permite que más radiación UV llegue a la Tierra.</p>
+        </article>
+      </section>
+
+      <section class="quiz-panel" id="quiz">
         <h2>Mini quiz</h2>
         <p id="quiz-question">Pregunta</p>
-        <div id="quiz-options"></div>
-        <p id="quiz-feedback"></p>
+        <div id="quiz-options" class="options-grid"></div>
+        <div class="feedback" id="quiz-feedback"></div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <p>Proyecto educativo sobre contaminación del aire y la capa de ozono.</p>
+        <div class="footer-links">
+          <a href="#impacto">Impacto</a>
+          <a href="#prevencion">Prevención</a>
+          <a href="#quiz">Quiz</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="javascript/script.js"></script>
   </body>
