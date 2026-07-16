@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contaminación del aire</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-logo" aria-label="logo de la app">🌍</div>
+      <div class="hero-content">
+        <p class="eyebrow">App educativa · Competencia ambiental</p>
+        <h1>Contaminación del aire y su impacto en la capa de ozono</h1>
+        <p>
+          La contaminación del aire no solo afecta la salud humana; también daña el planeta y pone en riesgo la capa de ozono que nos protege.
+        </p>
+        <button id="btn-impacto">Ver impacto inmediato</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="facts">
+        <article>
+          <h2>¿Qué es la contaminación del aire?</h2>
+          <p>
+            Es la presencia de sustancias dañinas en la atmósfera, como humo, partículas, gases tóxicos y emisiones industriales.
+          </p>
+        </article>
+        <article>
+          <h2>¿Qué pasa con la capa de ozono?</h2>
+          <p>
+            La capa de ozono filtra los rayos ultravioletas peligrosos. Cuando se dañan los compuestos protectores, aumenta el riesgo de cáncer de piel y problemas ambientales.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <h2>Cómo afecta al planeta</h2>
+        <div id="impacto" class="impact-box">
+          Haz clic en el botón para conocer un efecto importante.
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Salud</h3>
+            <p>Provoca problemas respiratorios y enfermedades cardiovasculares.</p>
+          </div>
+          <div class="card">
+            <h3>Clima</h3>
+            <p>Aumenta el calentamiento global y altera los patrones del tiempo.</p>
+          </div>
+          <div class="card">
+            <h3>Ozono</h3>
+            <p>Debilita la protección natural contra la radiación solar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tips">
+        <h2>Cómo prevenir la contaminación</h2>
+        <ul>
+          <li>Usar transporte público, bicicleta o caminar.</li>
+          <li>Reducir el consumo de energía y apagar luces innecesarias.</li>
+          <li>Reciclar y evitar el uso excesivo de plásticos.</li>
+          <li>Plantando árboles y cuidando los espacios verdes.</li>
+          <li>Apoyar tecnologías limpias y energías renovables.</li>
+        </ul>
+      </section>
+
+      <section class="organization">
+        <h2>Organización de la contaminación ambiental</h2>
+        <div class="org-grid">
+          <div class="org-card">
+            <h3>1. Fuentes</h3>
+            <p>Vehículos, fábricas, residuos y quema de combustibles.</p>
+          </div>
+          <div class="org-card">
+            <h3>2. Efectos</h3>
+            <p>Problemas respiratorios, cambio climático y daño a la capa de ozono.</p>
+          </div>
+          <div class="org-card">
+            <h3>3. Prevención</h3>
+            <p>Reducir emisiones, reciclar y cuidar los ecosistemas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <h2>Mini quiz</h2>
+        <p id="quiz-question">Pregunta</p>
+        <div id="quiz-options"></div>
+        <p id="quiz-feedback"></p>
+      </section>
+    </main>
+
+    <script src="javascirtp/script.js"></script>
+  </body>
+</html>
